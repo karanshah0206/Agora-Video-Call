@@ -4,7 +4,7 @@
   "version": "2.5.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/karanshah0206/Basic-Video-Call/tree/master/Group-Video/OpenVideoCall-Web"
+    "url": "https://github.com/karanshah0206/Agora-Video-Call"
   },
   "license": "MIT",
   "scripts": {
