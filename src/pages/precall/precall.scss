@@ -1,4 +1,4 @@
-@import '../../assets/color.scss';
+@import "../../assets/color.scss";
 
 #page-precall {
   background: $dark-cyan;
@@ -22,16 +22,13 @@
       &-logo {
         width: 4.29rem;
         height: 2.5rem;
-        margin-right: .86rem;
+        margin-right: 0.86rem;
       }
     }
     &-footer {
       padding: 0 2.14rem;
       display: flex;
       align-items: center;
-      :first-child {
-        margin-right: 5.71rem;
-      }
     }
     &-container {
       width: calc(100% - 4.29rem);
@@ -53,11 +50,11 @@
       position: relative;
     }
     &-card {
-      background: rgba(216, 216, 216, .1);
-      padding: .5rem 1.29rem;
+      background: rgba(216, 216, 216, 0.1);
+      padding: 0.5rem 1.29rem;
       color: $white;
-      margin: .43rem auto;
-      border-radius: .86rem;
+      margin: 0.43rem auto;
+      border-radius: 0.86rem;
       max-width: 25rem;
       &-header {
         font-size: 1.29rem;
@@ -68,7 +65,7 @@
       &-body {
         margin: 1rem 0;
         position: relative;
-        .initial>div {
+        .initial > div {
           margin: 0.71rem 0;
         }
       }
@@ -91,34 +88,34 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      >.step {
+      > .step {
         color: $light-blue;
         font-size: 1.14rem;
         width: 2.29rem;
         height: 2.29rem;
         border-radius: 50%;
-        border: 0.14rem solid transparentize($light-blue, .8);
+        border: 0.14rem solid transparentize($light-blue, 0.8);
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         &.active {
           border-color: $light-blue;
-          transition: border .2s ease-in-out;
+          transition: border 0.2s ease-in-out;
         }
       }
-    } 
+    }
     &-select {
       width: 100%;
       max-width: 25rem;
-      >select {
-        border: .07rem solid #FFF;
+      > select {
+        border: 0.07rem solid #fff;
         background: transparent;
         color: white;
         padding-left: 1rem;
       }
     }
-      
+
     &-video-test {
       display: flex;
       align-items: center;
@@ -130,7 +127,7 @@
       max-width: 25rem;
       align-items: center;
       .ag-icon {
-        color: #00B6ED;
+        color: #00b6ed;
         font-size: 2.29rem;
       }
     }
@@ -138,13 +135,13 @@
       display: flex;
       max-width: 25rem;
       align-items: center;
-      >img {
+      > img {
         width: 1.71rem;
         height: 1.71rem;
       }
-      >p {
+      > p {
         color: $grey;
-        padding: .43rem .86rem;
+        padding: 0.43rem 0.86rem;
         font-size: 1rem;
       }
     }
@@ -156,7 +153,7 @@
   }
 
   .select:not(.is-multiple):after {
-    border-color: #FFF!important;
+    border-color: #fff !important;
   }
 
   #quickJoinBtn {
@@ -165,18 +162,18 @@
     height: 2.86rem;
     color: $light-blue;
     background: transparent;
-    border: .07rem solid $light-blue;
+    border: 0.07rem solid $light-blue;
     &:hover {
-      transition: background .1s ease-in-out;
+      transition: background 0.1s ease-in-out;
       background: $cyan;
     }
   }
 
   #videoItem {
     display: inline-block;
-    border-radius: .43rem;
-    border: .14rem $light-blue solid;
-    background: url('../../assets/images/avatar.png') center no-repeat;
+    border-radius: 0.43rem;
+    border: 0.14rem $light-blue solid;
+    background: url("../../assets/images/avatar.png") center no-repeat;
     background-size: 80% 80%;
     height: 7.5rem;
     width: 7.5rem;
@@ -186,7 +183,9 @@
     flex-grow: 1;
   }
 
-  #videoDevice, #audioDevice, .ag-connect-test {
+  #videoDevice,
+  #audioDevice,
+  .ag-connect-test {
     width: 100%;
     max-width: 25rem;
     option {
@@ -201,22 +200,31 @@
     height: 100%;
     width: 100%;
     height: 10px;
-    display: inherit!important;
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    display: inherit !important;
+    background-image: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.15) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.15) 75%,
+      transparent 75%,
+      transparent
+    );
     background-size: 40px 40px;
     animation: progress-bar-stripes 1s linear infinite,
-                progress-bar-grow 10s linear;
+      progress-bar-grow 10s linear;
     animation-play-state: running;
   }
 
   #testDuration::before {
-    content: '';
+    content: "";
     border-radius: 1rem;
     position: absolute;
     width: 100%;
     height: 10px;
     background: $grey;
-    opacity: .3;
+    opacity: 0.3;
   }
 
   @keyframes progress-bar-stripes {
