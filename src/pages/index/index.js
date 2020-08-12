@@ -25,12 +25,8 @@ const getParameterByName = (name, url) => {
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 };
 
-
 // Intializes the ui with necessary video profile options. (resolution, framerate, bitrate etc.)
 const uiInit = () => {
-  document.querySelector(
-    ".login-title"
-  ).innerHTML = `AgoraWeb v${agoraVersion.slice(1)}`;
   let profileContainer = $("#videoProfile");
   let profileLowContainer = $("#videoProfileLow");
   let lowResolutionArr = Object.entries(RESOLUTION_ARR).slice(0, 7);
@@ -95,8 +91,6 @@ const validate = channelName => {
 
   return "";
 };
-
-
 
 const subscribeMouseEvent = () => {
   // Click Join and go to the meeting room

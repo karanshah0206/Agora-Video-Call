@@ -1,7 +1,8 @@
-@import '../../assets/color.scss';
+@import "../../assets/color.scss";
 
 #page-index {
-  background: url('../../assets/images/ag-index-background.png') center no-repeat;
+  background: url("../../assets/images/ag-index-background.png") center
+    no-repeat;
   background-size: cover;
   position: relative;
   min-height: 100%;
@@ -32,7 +33,7 @@
     text-align: center;
     margin: 2.14rem 0;
     p {
-      margin: .71rem 0;
+      margin: 0.71rem 0;
     }
     img {
       width: 50%;
@@ -51,19 +52,20 @@
 
   &-subtitle {
     color: $grey;
+    font-size: 30px;
   }
 }
 
 #channel {
   background: transparent;
   color: $white;
-  padding: .57rem 3.57rem;
+  padding: 0.57rem 3.57rem;
   height: 2.5rem;
   margin-bottom: 1rem;
   &-wrapper {
     // padding-bottom: 2.14rem;
-    >span {
-      height: 2.5rem!important;
+    > span {
+      height: 2.5rem !important;
     }
     &.has-icons-left .icon.is-left {
       left: 1.07rem;
@@ -75,14 +77,14 @@
   }
   &::-webkit-input-placeholder {
     color: $white;
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 
 #baseMode {
   font-size: 1rem;
   width: 11.43rem;
-  border: 0.07rem solid transparent!important;
+  border: 0.07rem solid transparent !important;
 }
 
 #joinBtn {
@@ -91,20 +93,20 @@
   padding: 0.71rem;
   background: $light-blue;
   &:hover {
-    box-shadow: 0 .14rem .14rem .07rem $blue;
-    transition: box-shadow .1s ease-in-out;
+    box-shadow: 0 0.14rem 0.14rem 0.07rem $blue;
+    transition: box-shadow 0.1s ease-in-out;
   }
 }
 
 #advancedProfile {
   width: 7.5rem;
-  font-size: .86rem;
+  font-size: 0.86rem;
   height: 2.29rem;
   color: $light-blue;
   background: transparent;
-  border: .07rem solid $light-blue;
+  border: 0.07rem solid $light-blue;
   &hover {
-    transition: .1s background ease-in-out;
+    transition: 0.1s background ease-in-out;
     background: $cyan;
   }
 }
@@ -114,20 +116,23 @@
   input[type="radio"] {
     position: fixed;
     left: 1000rem;
-    &:checked+.radio-btn {
+    &:checked + .radio-btn {
       background-size: cover;
-      background: url('../../assets/images/ag-oval-active.png') no-repeat center;
-      +.radio-img {
+      background: url("../../assets/images/ag-oval-active.png") no-repeat center;
+      + .radio-img {
         &.video {
-          background: url('../../assets/images/ag-video-active-s.png') no-repeat center;
+          background: url("../../assets/images/ag-video-active-s.png") no-repeat
+            center;
         }
         &.audio {
-          background: url('../../assets/images/ag-mic-active-s.png') no-repeat center;
+          background: url("../../assets/images/ag-mic-active-s.png") no-repeat
+            center;
         }
         &.audience {
-          background: url('../../assets/images/ag-audience-active.png') no-repeat center;
+          background: url("../../assets/images/ag-audience-active.png")
+            no-repeat center;
         }
-        +.radio-msg {
+        + .radio-msg {
           color: $light-blue;
           opacity: 1;
         }
@@ -143,25 +148,25 @@
     height: 30px;
     &.video {
       position: relative;
-      left: .21rem;
+      left: 0.21rem;
       background-size: cover;
-      background: url('../../assets/images/ag-video-s.png') no-repeat center;
+      background: url("../../assets/images/ag-video-s.png") no-repeat center;
     }
     &.audio {
-      background: url('../../assets/images/ag-mic-s.png') no-repeat center;
+      background: url("../../assets/images/ag-mic-s.png") no-repeat center;
     }
     &.audience {
-      background: url('../../assets/images/ag-audience.png') no-repeat center;
+      background: url("../../assets/images/ag-audience.png") no-repeat center;
     }
   }
   .radio-btn {
     width: 24px;
     height: 24px;
-    margin-right: .71rem;
-    background: url('../../assets/images/ag-oval.png') no-repeat center;
+    margin-right: 0.71rem;
+    background: url("../../assets/images/ag-oval.png") no-repeat center;
   }
   .radio-msg {
-    margin-left: .71rem;
+    margin-left: 0.71rem;
     color: $grey;
   }
 }
@@ -169,7 +174,7 @@
 #baseModeOptions {
   .dropdown-item {
     text-align: center;
-    padding: .57rem;
+    padding: 0.57rem;
     cursor: pointer;
     &:hover {
       background: #e8ecee;
@@ -183,11 +188,11 @@
       color: $dark-cyan;
     }
     hr {
-      margin: .71rem;
+      margin: 0.71rem;
     }
     p:nth-child(3) {
-      font-size: .86rem;
-      color: rgba(0, 0, 0, .5);
+      font-size: 0.86rem;
+      color: rgba(0, 0, 0, 0.5);
     }
   }
 }
@@ -196,11 +201,11 @@
   font-size: 1rem;
   width: 23rem;
   .dropdown-content {
-    border-radius: .86rem;
-    border: .07rem solid $light-blue;
+    border-radius: 0.86rem;
+    border: 0.07rem solid $light-blue;
     background: $cyan;
     text-align: center;
-    padding: .86rem .21rem;
+    padding: 0.86rem 0.21rem;
     cursor: pointer;
     .dropdown-item {
       display: flex;
@@ -226,7 +231,7 @@
 
 .validate {
   &-msg {
-    animation: tooltip .3s ease-in-out;
+    animation: tooltip 0.3s ease-in-out;
     width: 100%;
     position: relative;
     color: $red;
@@ -241,10 +246,10 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    >.icon-wrong {
+    > .icon-wrong {
       color: $red;
     }
-    >.icon-correct {
+    > .icon-correct {
       color: $green;
     }
   }
@@ -259,10 +264,10 @@
 
 .dropdown.is-active {
   .dropdown-menu {
-    animation: dropdown .25s ease-in-out
+    animation: dropdown 0.25s ease-in-out;
   }
   #advancedProfile {
-    transition: .1s background ease-in-out;
+    transition: 0.1s background ease-in-out;
     background: $cyan;
   }
 }
@@ -270,11 +275,11 @@
 @keyframes dropdown {
   from {
     opacity: 0;
-    transform: scale(.92) translate(0, -4px)
+    transform: scale(0.92) translate(0, -4px);
   }
   to {
     opacity: 1;
-    transform: scale(none) translate(none)
+    transform: scale(none) translate(none);
   }
 }
 
